@@ -1,33 +1,32 @@
 #!/bin/bash
 
 
-#test.css et test.html sont des fichiers tests (duh) il faut les remplacer par les vrais fichiers
+#test.css et test.html sont des fichiers tests il faut les remplacer par les vrais fichiers
 
-#6 > 7
-cat /home/httpsaves/Save6/csssave6 > /home/httpsaves/Save7/csssave7
-cat /home/httpsaves/Save6/htmlsave6 > /home/httpsaves/Save7/htmlsave7
+#6 > 7 
+mv /home/httpsaves/Save6/csssave.tar.gz /home/httpsaves/Save7
+mv /home/httpsaves/Save6/htmlsave.tar.gz /home/httpsaves/Save7
 
 #5 > 6
-cat /home/httpsaves/Save5/csssave5 > /home/httpsaves/Save6/csssave6
-cat /home/httpsaves/Save5/htmlsave5 > /home/httpsaves/Save6/htmlsave6
+mv /home/httpsaves/Save5/csssave.tar.gz /home/httpsaves/Save6
+mv /home/httpsaves/Save5/htmlsave.tar.gz /home/httpsaves/Save6
 
 #4 > 5
-cat /home/httpsaves/Save4/csssave4 > /home/httpsaves/Save5/csssave5
-cat /home/httpsaves/Save4/htmlsave4 > /home/httpsaves/Save5/htmlsave5
+mv /home/httpsaves/Save4/csssave.tar.gz /home/httpsaves/Save5
+mv /home/httpsaves/Save4/htmlsave.tar.gz /home/httpsaves/Save5
 
 #3 > 4
-cat /home/httpsaves/Save3/csssave3 > /home/httpsaves/Save4/csssave4
-cat /home/httpsaves/Save3/htmlsave3 > /home/httpsaves/Save4/htmlsave4
+mv /home/httpsaves/Save3/csssave.tar.gz /home/httpsaves/Save4
+mv /home/httpsaves/Save3/htmlsave.tar.gz /home/httpsaves/Save4
 
 #2 > 3
-cat /home/httpsaves/Save2/csssave2 > /home/httpsaves/Save3/csssave3
-cat /home/httpsaves/Save2/htmlsave2 > /home/httpsaves/Save3/htmlsave3
+mv /home/httpsaves/Save2/csssave.tar.gz /home/httpsaves/Save3
+mv /home/httpsaves/Save2/htmlsave.tar.gz /home/httpsaves/Save3
 
 #1 > 2
-cat /home/httpsaves/Save1/csssave1 > /home/httpsaves/Save2/csssave2
-cat /home/httpsaves/Save1/htmlsave1 > /home/httpsaves/Save2/htmlsave2
-
+mv /home/httpsaves/Save1/csssave.tar.gz /home/httpsaves/Save2
+mv /home/httpsaves/Save1/htmlsave.tar.gz /home/httpsaves/Save2
 
 #1 ovewrite
-cat test.css > /home/httpsaves/Save1/csssave1
-cat test.html > /home/httpsaves/Save1/htmlsave1
+tar -cvpzf /home/httpsaves/Save1/csssave.tar.gz /home/myself/test.css
+tar -cvpzf /home/httpsaves/Save1/htmlsave.tar.gz /home/myself/test.html
